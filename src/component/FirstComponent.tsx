@@ -5,7 +5,7 @@ const FirstComponent = () => {
         <div>
             <h1>Hi</h1>
             <div>
-                <p>I am a pirate from the bottom</p>
+                <p>I am a Pirate from the bottom</p>
             </div> 
         </div>
     )
