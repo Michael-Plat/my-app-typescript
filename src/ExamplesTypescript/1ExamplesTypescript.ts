@@ -84,6 +84,9 @@ const obj = {
 
 type PropertiesType<T> = T extends { [key: string]: infer U } ? U : never
 
+type GetActionsTypes<T extends {[key: string]: (...args: any[]) => any}> = ReturnType<PropertiesType<T>>
+
+
 let Music: ReturnType<PropertiesType<typeof actions>>
 
 const actions = {
